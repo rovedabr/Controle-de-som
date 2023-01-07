@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+ 
+  background-color: rgba(233, 235, 237, 0.781);
+  display: grid;
+}
+
+main {
+  justify-self: end;
+  align-self: flex-end;
+  margin: 19.6rem auto;
+  gap: clamp(5rem, 1rem + 20vw, 19.2rem); 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.forestBg {
+  position: absolute;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 7px;
+  background-color:  hsla(0, 0%, 73%, 0.737);
+
+}
+
+.forestImg {
+  margin-top: 5rem;
+  z-index: 3;
+
+}
+
+svg path{
+  fill: #081039c3;
+}
+
+.forestVolume {
+  margin-top: 5rem;
+  z-index: 3;
+}
+
+.forestVolume input {
+  appearance: none;
+
+  background: #081039c3;
+  outline: none;
+  width: 90%;
+  height: 8px;
+  border-radius: 9px;   
+}
+
+.forestVolume input::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  border-radius: 5px; 
+
+  background: #081039c3;
+  cursor: pointer;
+}
+
+.pause{
+  width: 4.5rem;
+  height: 1rem;
+
+  font-size: .8rem;
+  text-align: center; 
+  color:  hsla(0, 0%, 73%, 0.737);
+  background-color: #081039c3;
+  border-radius: 2px;
+  margin-top: 1rem;
+  z-index: 3;
+}
